@@ -6,7 +6,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #F4F5F5;
-    padding-bottom: 33em;
+    padding-bottom: 37em;
 }
 h1{
     font-family: 'Courier New', Courier, monospace;
@@ -41,6 +41,7 @@ footer{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     filter: drop-shadow(0px -3px 0px black);
+    font-size: large;
 }
 header{
     top: 0;
@@ -50,14 +51,11 @@ header{
     z-index: 6;
     filter: drop-shadow(0px 3px 0px black);
 }
-footer a {
-    width: 33%;
-    
-    height: inherit;
+footer li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     text-decoration: none;
     color: black
 }
@@ -91,7 +89,7 @@ footer nav ul {
     position: relative;
     width: 400%;
     margin: 0;
-    animation: 15s slideshow infinite;
+    animation: 10s slideshow infinite;
 }
 .slideshow figure img{
     float: left;
@@ -129,14 +127,20 @@ footer nav ul {
     position: fixed;
     bottom: 3em;
     right: 1em;
+    filter: drop-shadow(3px 3px 2px);
 }
-button{
+main div div a{
     background-color: #FF521B;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 4em;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    margin-top: 2em;
+    text-decoration: none;
+    color: black;
+    filter: drop-shadow(1px 1px 1px);
+}
+.meerinfo{
+    margin-left: 1em;
 }
 main div:nth-of-type(2):not(.workshop){
     display: flex;
@@ -180,4 +184,6 @@ main div:nth-of-type(1):not(.workshop){
     padding: 0.5em;
     padding-top: 1em;
 }
-
+main div div p{
+    padding-bottom: 2em;
+}
